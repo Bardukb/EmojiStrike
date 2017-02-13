@@ -1,6 +1,7 @@
 # EmojiStrike ⚡️
 CS319 Group 1.G Project
 Group Members: 
+
 Bora Bardük	
 Hüseyin Eren Çalık	
 Kıvanç Gümüş	
