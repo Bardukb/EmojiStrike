@@ -1,0 +1,20 @@
+Hoca’s Advices
+
+Harita nasıl oluşturulacak. Bir dosyadan veya benzeri kaynaktan yüklenecekse oradaki yapı nedir? Tipik olarak haritaları okuyup belleğe yüklemede Builder Pattern adını verdiğimiz, derste de ileride işleyeceğimiz bir yasarım biçiminden yararlanılır. Bu tasarım biçimini araştırıp öğrenebilirsiniz.
+Build pattern arastir (harita icin)
+
+2. Harita belleğe yüklendikten sonra, oyun içinde karakterlerle nasıl etkileşime girecek? Yokedilebilir alanlar, tuzaklar, harita üzerindeki diğer nesneler (powerup, silah, vb) ve haritadaki karakterler arası etkileşim nasıl olacak?
+
+3. Temel olarak karakterlerin hareketini kim sağlayacak ve hareket sağlandığı zaman harita üzerindeki veri mi yoksa karakter içindeki veri mi güncellenecek? Yani karakterler kendilerinin nerede olduğunu mu bilecek, yoksa harita tüm karakterlerin nerede olduğunu bilip, gerektiğinde karaktere "sen buradasın" mı diyecek?
+Harita mu update karakter mi? (bence karakter)
+
+
+
+4. Nesneler ile karakterlerin etkileşim modeli nasıl olacak? Powerup'ların etkisi nedir? Sadece belirli bir miktarda can mı ekler yoksa süreli/süresiz ek özellikler (god mode, vb) katabilir mi? Eğer böyle bir şey olacak ise karaktere dair sınıfın powerup nesneleri ile ilişkisi nasıl tasarlanacak? Silahlar da powerup gibi mi davranacak yoksa farklı bir kategoride mi ele alacaksınız?
+Daha fazla powerup dusun
+
+
+5. Çoklu oyuncu oyununda aynı klavyeyi mi kullanacaklar yoksa ağdan mı bağlanacaklar?
+Bence klavye kullanmalilar (turn based)
+
+Bizim IEEE 830 templatimiz “Stimulus”
