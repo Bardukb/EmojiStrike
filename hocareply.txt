@@ -17,4 +17,6 @@ Daha fazla powerup dusun
 5. Çoklu oyuncu oyununda aynı klavyeyi mi kullanacaklar yoksa ağdan mı bağlanacaklar?
 Bence klavye kullanmalilar (turn based)
 
-Bizim IEEE 830 templatimiz “Stimulus”
+Bizim IEEE 830 templatimiz “Stimulus
+
+t
