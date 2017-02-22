@@ -37,19 +37,24 @@
 
 			The user will use the keyboard to pass in inputs. While selecting an Emoji avatar for each player, and the map of the game, players will use the four arrow keys to navigate the menu, the Enter key to select, and the Backspace key to move back. During gameplay, the W, A, S, D keys will be used to move the character, and the four arrow keys will be used to aim the weapon, while the Space Bar will be used to fire.
 
-			The “P” button will be used to move the game in and out of the Pause mode. The “R” button will be used to restart the game and bring it back into the main menu, and the “Q” button will be used to quit the game. 
+			The “P” button will be used to move the game in and out of the Pause mode. The “R” button will be used to restart the game and bring it back into the main menu, and the “Q” button will be used to quit the game. “Shift”+ “Q” saves the game first and then quits. A dialog box will open asking the user to type in a name for the saved game.
 
 			The outputs will be passed using the computer monitor and speakers. The user interface display will be visible on the monitor, and game sounds will be audible through the speakers.
 
 			The game will be saved in a sorted order according to the date.  The file which will be used will be in the root directory of the game, and will be a CSV file to keep track of different data easily.  The data will consist of the game state, date, and a desired name to each save file.  
 
+
 		2.1.2	User Interface
 
-			The game will be displayed in the maximum windowed resolution. In the top-left corner will be a menu with options to pause, quit, and restart the game. Next to the commands will be the letters which should be pressed to bring the user into the desired state. The rest of the available space will be occupied by the game.
+			The game will be displayed in the maximum windowed resolution. In the top-left corner will be a menu with options to pause, quit, quit + save, and restart the game. Next to the commands will be the letters which should be pressed to bring the user into the desired state. The rest of the available space will be occupied by the game.
+
+			During each move, a small circular timer will display the amount of time remaining for the player currently doing their move.
 
 			When beginning the game, the users will select the number of players. Following this they will select the Emoji and set the name for each player in sequence, and then finally select the map they will play on, after which they game will start.
 
 			The users will select Emojis from a list, and type in the name for each player. They will also select the number of players from a list of pre-approved numbers. A table of maps with small previews will allow them to select the map.
+
+			If a player chooses to load the game, there will appear a list of files which the user may load the game from. While saving, there will be a text input box where the user types in the saved game’s name, and press Enter to quit.
 
 		2.1.3	Hardware Interfaces
 
@@ -65,70 +70,61 @@
 
 		N/A
 
-2.1.6	Memory Constraints
+		2.1.6	Memory Constraints
 
-In the Java Virtual Machine, -Xmx is 2 gigabytes, and the -Xms is 256 megabytes. The program will use the default settings. 
+			In the Java Virtual Machine, -Xmx is 2 gigabytes, and the -Xms is 256 megabytes. The program will use the default settings. 
 
-2.1.7	Operations
+		2.1.7	Operations
+		
+			There are four modes of operation. There is the “Loading” mode, the “Main Menu” mode, the “Pause” mode, the “Game” mode.
 
-There are four modes of operation. There is the “Loading” mode, the “Main Menu” mode, the “Pause” mode, the “Game” mode.
+			During the “Loading” mode, no keys can be used. There are no user operations in this mode, since the program is loading the game.
 
-During the “Loading” mode, no keys can be used. There are no user operations in this mode, since the program is loading the game.
+			Throughout all the following modes, the users can use the “Q” key to quit the game, and the “R” key to bring them back to the main menu and delete any progress.
 
-Throughout all the following modes, the users can use the “Q” key to quit the game, and the “R” key to bring them back to the main menu and delete any progress.
+			In the “Main Menu” mode, the user can use the arrow keys to navigate the menu, the Enter key to select, and the Backspace to move them back in the menu. Apart from these keys and “R” and “Q”, all other keys are deactivated.
 
-In the “Main Menu” mode, the user can use the arrow keys to navigate the menu, the Enter key to select, and the Backspace to move them back in the menu. Apart from these keys and “R” and “Q”, all other keys are deactivated.
+			In the “Pause” mode, the user can only use the “R”, “P”, “Q”, and “Shift” + “Q” keys. The “P” key moves the user back into the “Game mode”.
 
-In the “Pause” mode, the user can only use the “R”, “P” and “Q” keys. The “P” key moves the user back into the “Game mode”.
-
-In the “Game” mode, the user can use all available keys. Arrow keys will change the weapon’s aim, while the “W”, “A”, “S”, “D” keys will navigate the player’s character. The “P” key will move the game into “Pause” mode, and the “R” and “Q” keys will keep their functionality. The Space Bar will shoot the weapon.
-
-
+			In the “Game” mode, the user can use all available keys. Arrow keys will change the weapon’s aim, while the “W”, “A”, “S”, “D” keys will navigate the player’s character. The “P” key will move the game into “Pause” mode, and the “R”, “Q”, and “Shift + Q” keys will keep their functionality. The Space Bar will shoot the weapon.
 
 
 
 
+		2.1.8	Site Adaptation Requirements
 
-
-2.1.8	Site Adaptation Requirements
-
-a)	The data initialization will be done in the same way for every deployment since there will be no difference when application will be deployed into identical Java Virtual Machines.  During the menu state, the texture files and menu music will be retrieved from the aspects file of the game.  During the play state, the map and player figures will be rendered from the selected pre-existing map file before the game starts.  There will be additional components which will procedurally be required, like sound and visual effect files.  This data will be rendered real-time since their timing and locations are unknown before-hand.
-b)	Since our application will not change functionality in different areas of deployment, we will not have any specific mission related features.
+			a)	The data initialization will be done in the same way for every deployment since there will be no difference when application will be deployed into identical Java Virtual Machines.  During the menu state, the texture files and menu music will be retrieved from the aspects file of the game.  During the play state, the map and player figures will be rendered from the selected pre-existing map file before the game starts.  There will be additional components which will procedurally be required, like sound and visual effect files.  This data will be rendered real-time since their timing and locations are unknown before-hand.
+			b)	Since our application will not change functionality in different areas of deployment, we will not have any specific mission related features.
 
 
 
-2.2	Product Functions
+	2.2	Product Functions
 
-Allow user to start game
-Allow user to pick avatar
-Allow user to choose weapon
-Allow user to shoot other characters 
-Allow user to move on map
-Save (?)
+		The program will allow users to start the game, pick an avatar for themselves in that game, and choose a map to play on. While playing, users may choose a weapon to attack other players with, attack other players with the weapon, and move around on the map. Players may save the current game if it is incomplete, and load earlier game instances to play.
 
 
-2.3	User Characteristics
 
-Basic knowledge of how to use a keyboard required
-No technical expertise, special knowledge, or extensive experience required 
-Game in designed to be intuitive 
+	2.3	User Characteristics
+
+		The game requires the user to have basic knowledge on how to use a keyboard. Other than that, no technical expertise, special knowledge, or extensive experience is required. The game is designed to be intuitive and easy to understand for new players. 
 
 
-2.4 	Constraints
 
-Create in Java
-Database to store records (?)
+	2.4 	Constraints
 
-2.5 Assumptions and Dependencies
+		Developers must create the game in Java.
 
-We are expecting that the game is designed for computers with regular functioning keyboards with ISO or US layout which possesses the required keys for users to communicate the game.  
-We are expecting that the game is designed for multi-color and multi-dimensional screens with a size such that gameplay is user-friendly.
-We are expecting that the game is developed using an up-to-date Java version to avoid version conflicts.
 
-2.6 Apportioning of Requirements
+	2.5 Assumptions and Dependencies
 
-	If the up-to-date Java version of the development time requires different hardware and software constraints (like macOS losing support), requirements may change at the time.
-	If the up-to-date computer communication technologies render the use of keyboard, speaker, or display interfaces obsolete; different types of I/O with the user should be implemented.
+		We are expecting that the game is designed for computers with regular functioning keyboards with ISO or US layout which possesses the required keys for users to communicate the game.  
+		We are expecting that the game is designed for multi-color and multi-dimensional screens with a size such that gameplay is user-friendly.
+		We are expecting that the game is developed using an up-to-date Java version to avoid version conflicts.
+
+	2.6 Apportioning of Requirements
+
+		If the up-to-date Java version of the development time requires different hardware and software constraints (like macOS losing support), requirements may change at the time.
+		If the up-to-date computer communication technologies render the use of keyboard, speaker, or display interfaces obsolete; different types of I/O with the user should be implemented.
 
 
 
