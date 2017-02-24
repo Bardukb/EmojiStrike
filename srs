@@ -126,7 +126,44 @@
 		If the up-to-date Java version of the development time requires different hardware and software constraints (like macOS losing support), requirements may change at the time.
 		If the up-to-date computer communication technologies render the use of keyboard, speaker, or display interfaces obsolete; different types of I/O with the user should be implemented.
 
+3.0 Specific Requirements
 
+	3.1 External Interface Requirements
 
+		3.1.1 User Interfaces
 
+		3.1.2 Hardware Interfaces
+
+		3.1.3 Software Interfaces
+
+		3.1.4 Communications Interfaces
+
+	3.2 Functional Requirements
+
+		3.2.1 Stimulus 1
+
+			3.2.1.1 Functional Requirement 1
+
+			3.2.1.2 Functional Requirement 2
+
+			.
+			.
+			.
+			3.2.1.m Functional Requirement m
+
+		3.2.2 Stimulus 2
+
+		.
+		.
+		.
+
+		3.2.m Stimulus m
+
+	3.3 Performance Requirements
+
+	3.4 Design Constraints 
+
+	3.5 Software Design Attributes 
+
+	3.6 Other Requirements
 
