@@ -202,75 +202,91 @@
 	3.2 Functional Requirements
 
 		3.2.1 Menu State
-			
+		
 			3.2.1.1 Arrow Keys
+				The system shall highlight the available options depending on which keys are pressed. Up key moves the selection up, down key moves it down. 
 			
 			3.2.1.2 Enter Key
-			
-			3.2.1.3 Backspace Key
+				The system shall run the highlighted option.
 		
 		3.2.2 Choice State
 			
 			3.2.2.1 Arrow Keys
+				The system shall highlight the available options depending on which keys are pressed. It will loop through the options.
 			
 			3.2.2.2 Enter Key
+				The system shall run the highlighted option.
 			
 			3.2.2.2 Letter and Number Keys
+				In the Emoji-selection window, the system shall take the textual input from the user and save it as the name of that particular player.
 		
 		3.2.3 Game State
 			
 			3.2.3.1 Arrow Keys
+				The system shall calculate the direction where the weapon will be fired and represent an arrow in that direction.
 			
-			3.2.3.2 Enter Key
+			3.2.3.2 Space Key
+				The system shall fire the weapon and display the animations, and calculate all updates to display on the screen (characters hurt, terrain destroyed, remaining players, new spaces moved)
 			
-			3.2.3.3 Space Key
+			3.2.3.3 ASDW Keys
+				Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.
+				Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.
 			
-			3.2.3.4 ASDW Keys
-			
-			3.2.3.5 Enter Key
-			.
-			.
-			.
-		
-		
+			3.2.3.4 Q Key
+				The system shall terminate.
+				
+			3.2.3.5 R Key
+				The system shall quit this instance of the game state and move into the menu state.
+				
+			3.2.3.6 P Key
+				The system shall move from the Game state into the Pause state.
+				
+			3.2.3.7 Shift + Q Keys
+				The system shall first open the Save State, and then terminates.
+
 		3.2.4 Save State
 			
 			3.2.4.1 Letter and Number Keys
+				The system shall store the input 
 			
 			3.2.4.2 Enter Key
+				The system shall make a new file with the stored data of the current game, and the name of the and then return to the state it came from.
 			
 			3.2.4.2 Q Key
+				The system shall terminate.
 			
 		3.2.5 Pause State
 			
 			3.2.5.1 P Key
+				The system shall move from the Pause state into the Game state.
 			
 			3.2.5.2 R Key
+				The system shall quit this instance of the game state and move into the menu state.
 			
 			3.2.5.3 Q Key
+				The system shall terminate.
 
 		3.2.6 Load State
 		
 			3.2.6.1 Arrow Keys
+				The system shall change the highlighted saved game on the load game screen. If there is no saved game, no action will be taken by the system.
+				
+			3.2.6.2 Q Key
+				The system shall terminate.
 			
-			3.2.6.2 R Key
-			
-			3.2.6.3 Q Key
+			3.2.6.3 Backspace Key
+				The system shall move back into the Menu State.
 		
 		3.2.7 Tutorial State
 		
 			3.2.7.1 Arrow Keys
+				The system shall scroll throught the tutorial screen displayed to the user.
 		
 			3.2.7.2 Backspace Key
+				The system shall return to the Menu state.
 		
 			3.2.7.3 Q Key
-
-
-		3.2.2 ASDW Keys
-		
-			3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.
-
-			3.2.2.2 Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.
+				The system shall terminate.
 
 	3.3 Performance Requirements
 		
@@ -281,9 +297,9 @@
 
 	3.4 Design Constraints
 	
-		Limitastions imposed by Javax or Swing, for the GUI.
-		Limitastions imposed by the Java Sound API.
-		Limitastions imposed by the Java KeyboardListener used by the GUI component.
+		Limitations imposed by Javax or Swing, for the GUI.
+		Limitations imposed by the Java Sound API.
+		Limitations imposed by the Java KeyboardListener used by the GUI component.
 		No other hardware... // unless we use mouse
 
 	3.5 Software Design Attributes 
