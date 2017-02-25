@@ -148,6 +148,8 @@
 	
 		3.1.1 User Interfaces
 		
+			The system starts a window in Java and waits for keyboard inputs from the user to change the game state. Different commands work in different
+				states, and so not all keys work in every part of the game. For example, the ASDW commands will not work for the menu state.
 
 		3.1.2 Hardware Interfaces
 			.... Do we need to deal with all this detail if we just use methods provided by Java??? timing etc for a keyboard is on a way lower level
