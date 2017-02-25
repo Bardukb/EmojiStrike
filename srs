@@ -145,54 +145,54 @@
 		l) End messages.
 	
 	
-		.... Do we need to deal with all this detail if we just use methods provided by Java??? timing etc for a keyboard is on a way lower level
-		a) Keyboard
-		b) To allow the user to enter commands to be interpreted by the game
-		c) Source of input or destination of output;
-		d) Valid range, accuracy, and/or tolerance;
-		e) Units of measure;
-		f) Real time (?)
-		g) Changes will be made visible on the monitor screen and audible through the speakers
-		h) N/A
-		i) N/A
-		j) N/A
-		k) Command formats;
-		l) End messages.
-		
-		a) Speakers
-		b) To allow the user to hear sounds emitted by the game for a better user experience
-		c) Source is game events
-		d) Valid range, accuracy, and/or tolerance;
-		e) Units of measure;
-		f) Real time (?)
-		g) Changes made by keyboard influence sounds produced
-		h) N/A
-		i) N/A
-		j) .mp3 (???)
-		k) Command formats;
-		l) End messages.
-		
-		a) Monitor
-		b) To allow the user to view changes in the gameplay and to see the visualization of their commands.
-		c) Source is game events
-		d) Valid range, accuracy, and/or tolerance;
-		e) Units of measure;
-		f) Real time (?)
-		g) Changes will be made visible on the monitor screen and audible through the speakers
-		h) N/A
-		i) N/A
-		j) .jpg, .png, etc (?)
-		k) Command formats;
-		l) End messages.
-		
+	
 		3.1.1 User Interfaces
 		
 
 		3.1.2 Hardware Interfaces
-		
+			.... Do we need to deal with all this detail if we just use methods provided by Java??? timing etc for a keyboard is on a way lower level
+
+			a) Keyboard
+			b) To allow the user to enter commands to be interpreted by the game
+			c) Source of input or destination of output;
+			d) Valid range, accuracy, and/or tolerance;
+			e) Units of measure;
+			f) Real time (?)
+			g) Changes will be made visible on the monitor screen and audible through the speakers
+			h) N/A
+			i) N/A
+			j) N/A
+			k) Command formats;
+			l) End messages.
+			
+			a) Speakers
+			b) To allow the user to hear sounds emitted by the game for a better user experience
+			c) Source is game events
+			d) Valid range, accuracy, and/or tolerance;
+			e) Units of measure;
+			f) Real time (?)
+			g) Changes made by keyboard influence sounds produced
+			h) N/A
+			i) N/A
+			j) .mp3 (???)
+			k) Command formats;
+			l) End messages.
+			
+			a) Monitor
+			b) To allow the user to view changes in the gameplay and to see the visualization of their commands.
+			c) Source is game events
+			d) Valid range, accuracy, and/or tolerance;
+			e) Units of measure;
+			f) Real time (?)
+			g) Changes will be made visible on the monitor screen and audible through the speakers
+			h) N/A
+			i) N/A
+			j) .jpg, .png, etc (?)
+			k) Command formats;
+			l) End messages.
 
 		3.1.3 Software Interfaces
-		
+			N/A
 
 		3.1.4 Communications Interfaces
 			N/A
@@ -226,7 +226,12 @@
 		Keyboard input will be used to alter the state of the game, which will be reflected via changes in monitor and speakers.
 		Data transcations will hopefully be handled in real-time, since this system is rather light. The user should not have to wait for the game.
 
-	3.4 Design Constraints 
+	3.4 Design Constraints
+	
+		Limitastions imposed by Javax or Swing, for the GUI.
+		Limitastions imposed by the Java Sound API.
+		Limitastions imposed by the Java KeyboardListener used by the GUI component.
+		No other hardware... // unless we use mouse
 
 	3.5 Software Design Attributes 
 
