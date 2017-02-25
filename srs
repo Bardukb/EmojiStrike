@@ -228,13 +228,7 @@
 
 		3.2.2 ASDW Keys
 		
-		3.2.3 Entire Keyboard
-		
-		3.2.4 Enter Key
-		
-		3.2.5 Space Key
-		
-		3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.  
+			3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.  
 
 			3.2.2.2 Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.  
 
