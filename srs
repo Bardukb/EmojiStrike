@@ -106,8 +106,7 @@
 
 	2.3	User Characteristics
 
-		The game requires the user to have basic knowledge on how to use a keyboard. Other than that, no technical expertise, special knowledge, or extensive experience is required. The game is designed to be intuitive and easy to understand for new players. 
-
+		The game requires the user to have basic knowledge on how to use a keyboard. Other than that, no technical expertise, special knowledge, or extensive experience is required. The game is designed to be intuitive and easy to understand for new players.
 
 
 	2.4 	Constraints
@@ -130,54 +129,36 @@
 
 	3.1 External Interface Requirements
 	
-						DEFAULT FORMAT
-		a) Name of item;
-		b) Description of purpose;
-		c) Source of input or destination of output;
-		d) Valid range, accuracy, and/or tolerance;
-		e) Units of measure;
-		f) Timing;
-		g) Relationships to other inputs/outputs;
-		h) Screen formats/organization;
-		i) Window formats/organization;
-		j) Data formats;
-		k) Command formats;
-		l) End messages.
-	
-	
-	
 		3.1.1 User Interfaces
 		
-			The system starts a window in Java and waits for keyboard inputs from the user to change the game state. Different commands work in different
-				states, and so not all keys work in every part of the game. For example, the ASDW commands will not work for the menu state.
+			The system starts a window in Java and waits for keyboard inputs from the user to change the game state. Different commands work in different states, and so not all keys work in every part of the game. For example, the ASDW commands will not work for the menu state.
 
 		3.1.2 Hardware Interfaces
-			.... Do we need to deal with all this detail if we just use methods provided by Java??? timing etc for a keyboard is on a way lower level
-
+			
 			a) Keyboard
 			b) To allow the user to enter commands to be interpreted by the game
-			c) Source of input or destination of output;
-			d) Valid range, accuracy, and/or tolerance;
-			e) Units of measure;
-			f) Real time (?)
+			c) N/A
+			d) N/A
+			e) N/A
+			f) Real time
 			g) Changes will be made visible on the monitor screen and audible through the speakers
 			h) N/A
 			i) N/A
 			j) N/A
-			k) Command formats;
+			k) N/A
 			l) End messages.
 			
 			a) Speakers
 			b) To allow the user to hear sounds emitted by the game for a better user experience
 			c) Source is game events
-			d) Valid range, accuracy, and/or tolerance;
-			e) Units of measure;
-			f) Real time (?)
+			d) N/A
+			e) N/A
+			f) Real time
 			g) Changes made by keyboard influence sounds produced
 			h) N/A
 			i) N/A
-			j) .mp3 (???)
-			k) Command formats;
+			j) .mp3, .wav
+			k) N/A
 			l) End messages.
 			
 			a) Monitor
@@ -300,12 +281,26 @@
 		Limitations imposed by Javax or Swing, for the GUI.
 		Limitations imposed by the Java Sound API.
 		Limitations imposed by the Java KeyboardListener used by the GUI component.
-		No other hardware... // unless we use mouse
 
 	3.5 Software Design Attributes 
-
+		
+		3.5.1 Reliability
+			The client should have a Java Runtime Environment 8 installed since the system will run on that. The reliability of the system depends on the JVM, and so it should not crash or hang for any reason other than operating system failure.
+			
+		3.5.2 Availability
+			The system is available to everyone with Java Runtime Environment.
+		
+		3.5.3 Security
+			No need for security.
+			
+		3.5.4 Maintainability
+			Software has no real maintainability requirements.
+		
+		3.5.5 Portability
+			Since it will run on the Java Virtual Machine, the system is highly portable. It has no other portability considerations.
+	
 	3.6 Other Requirements
-
+		There are no other requirements.
 
 GAME PROCEDURE
 
