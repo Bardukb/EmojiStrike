@@ -200,18 +200,16 @@
 	3.2 Functional Requirements
 
 		
-		3.2.1 Stimulus 1
+		3.2.1 Arrow Keys in Menu State
 
-			3.2.1.1 Functional Requirement 1
+			3.2.1.1 Switch Between Menu States
 
-			3.2.1.2 Functional Requirement 2
 
-			.
-			.
-			.
-			3.2.1.m Functional Requirement m
+		3.2.2 Arrow Keys in Game State
 
-		3.2.2 Stimulus 2
+			3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.  
+
+			3.2.2.2 Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.  
 
 		.
 		.
