@@ -35,7 +35,7 @@
 
 		2.1.1	System Interfaces
 
-			The user will use the keyboard to pass in inputs. While selecting an Emoji avatar for each player, and the map of the game, players will use the four arrow keys to navigate the menu, the Enter key to select, and the Backspace key to move back. During gameplay, the W, A, S, D keys will be used to move the character, and the four arrow keys will be used to aim the weapon, while the Space Bar will be used to fire.
+			The user will use the keyboard to pass in inputs. While selecting an Emoji avatar for each player, and the map of the game, players will use the four arrow keys to navigate the menu, the Enter key to select, and the Backspace key to move back. The user will use the letter and number keys to type in their character's name. During gameplay, the W, A, S, D keys will be used to move the character, and the four arrow keys will be used to aim the weapon, while the Space Bar will be used to fire.
 
 			The “P” button will be used to move the game in and out of the Pause mode. The “R” button will be used to restart the game and bring it back to the main menu, and the “Q” button will be used to quit the game. “Shift”+ “Q” saves the game first and then quits. A dialog box will open asking the user to type in a name for the saved game.
 
@@ -206,6 +206,8 @@
 			3.2.1.1 Arrow Keys
 			
 			3.2.1.2 Enter Key
+			
+			3.2.1.3 Backspace Key
 		
 		3.2.2 Choice State
 			
@@ -216,27 +218,59 @@
 			3.2.2.2 Letter and Number Keys
 		
 		3.2.3 Game State
+			
+			3.2.3.1 Arrow Keys
+			
+			3.2.3.2 Enter Key
+			
+			3.2.3.3 Space Key
+			
+			3.2.3.4 ASDW Keys
+			
+			3.2.3.5 Enter Key
+			.
+			.
+			.
+		
 		
 		3.2.4 Save State
-		
+			
+			3.2.4.1 Letter and Number Keys
+			
+			3.2.4.2 Enter Key
+			
+			3.2.4.2 Q Key
+			
 		3.2.5 Pause State
-		
+			
+			3.2.5.1 P Key
+			
+			3.2.5.2 R Key
+			
+			3.2.5.3 Q Key
+
 		3.2.6 Load State
 		
+			3.2.6.1 Arrow Keys
+			
+			3.2.6.2 R Key
+			
+			3.2.6.3 Q Key
+		
 		3.2.7 Tutorial State
+		
+			3.2.7.1 Arrow Keys
+		
+			3.2.7.2 Backspace Key
+		
+			3.2.7.3 Q Key
 
 
 		3.2.2 ASDW Keys
 		
-			3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.  
+			3.2.2.1 Update the location of player on the map by the predetermined move amount for the character.  The amount of location update may change by the powerups acquired by the character.  Character may strafe left, right, and jump. Strafing  and jumping physics are calculated by physics engine, and will stop if horizontal or vertical collision occurs.
 
-			3.2.2.2 Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.  
-
-		.
-		.
-		.
-
-		3.2.m Stimulus m
+			3.2.2.2 Detect the collision on map and use integrated physics to execute necessary action.  No collision with terrain executes falling action and continues until collision is provided.
 
 	3.3 Performance Requirements
 		
