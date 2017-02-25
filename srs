@@ -302,35 +302,3 @@
 	3.6 Other Requirements
 		There are no other requirements.
 
-GAME PROCEDURE
-
-		The system shall open
-		The system shall open a menu showing the options to: start new game, load saved game, open tutorial
-		
-		The user shall use the arrow keys to navigate to the desired section and hit Enter to select
-		
-		if selected open tutorial
-			the system shall open a new page showing a text tutorial for the game with some images
-		
-		if selected load saved game
-			the system shall open a list of saved game files in a certain location (eg: C:\Users\Worms) and allow the user to select one using the 
-				arrow keys and Enter
-			the system shall then open the loaded saved game
-			
-		if selected start new game
-			the system shall present a dropdown menu with number of players to play in game... player will choose number with keyboard and Enter
-			the system shall present a list of Emojis to choose from, hit Enter and move to a box underneath to enter the name of the player...
-			the system shall execute the previous statement for each player
-			the system shall present a list of maps with their thumbnails and allow the user to choose the desired map via arrow keys and Enter
-			open game
-			
-		in game
-			the system shall display a 30 second timer in the top-right corner of the screen
-			the system shall allow the user to move the character around the map with ASDW keys
-			there will initially be only one gun for each player
-			an arrow shall point out of onscreen emoji in direction of weapon's aim
-			the system shall allow the user to change the direction of the arrow using the arrow keys
-			the system shall fire the weapon when the user hits the space bar, the longer it is held, the higher the power
-			the above then work for the next player, proceeding until all players have acted and the first one starts again
-			the bove loops until all players dead
-			the system shall then show a victory message
