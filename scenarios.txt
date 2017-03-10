@@ -1,0 +1,23 @@
+Do create scenarios that describe gameplay. These will be important for games. The scenarios should include how you move, 
+also how you can get cornered, how you attack/defend, etc in a story line. Upgrades, losing lives, etc can be the focus of individual scenarios.
+
+
+Once all users have registered their characters and the game has started, the system can be considered to be in the game state.
+
+Turns will cycle through the list of players. The player with the current turn will have 30 seconds until the turn switches onto the next player in the list.
+
+Move Scenario
+To show this sceario, we will assume the player pressed the "A" key to move to the left. If the player is on an open ground in the map, the displayed character shall move one position to th left of its current position.
+
+Cornered Scenario
+To show this sceario, we will assume the player pressed the "A" key to move to the left. If the player is on the map but immediately to the left of the player is the end of the map, then pressing the A key will make no difference and the displayed character will remain at its current position. This applies if the player presses the W key and is at the top of the map, S key and at the bottom, and D key if at the right.
+The player may also be cornered if they are in a position on the map adjacent to an obstruction (such as a big boulder on a nature map), and try to move in the direction of the obstruction.
+
+Attack Scenario
+When a player is the active player, they may attack another player. They will have a list of weapons provided to them, and they may cycle to the next available weapon using the C key. A weapon will be made unavailable if it has no ammo. The player may adjust where they are aiming using the arrow keys, so if they press the right arrow key the weapon will be aimed to the right, and then pressing the up key will incline the aim. The left and right keys will change the aim to their own respective directions. The aim is represented onscreen by an arrow displayed by the system. The user then presses the space key to shoot (he will stab if a knife is selected), and the weapon will fire. The intensity of the fire will depend on how long the space key was pressed, with a longer press resulting in a higher intensity. This action will decrease the weapon's ammo and will also end the player's turn. The fired projectile, if the weapon is a gun, will land according to where the user aimed it and the amount of intensity used, and will damage everything around it by decreasing the health of the struck player and destroyinh the adjacent destroyable map. A player has no option to defend themselves from an attack during another player's turn.
+
+Die Scenario
+When a player has been hit by a weapon, damage decreases the player's health. If the damage delivered is greater than the player's health, the player will die. The player's character will disappear from the map, and the character will be removed from the available characters.
+
+Power-Up Scenario
+This scenario is triggered if a player enters a position where a power-up icon is placed. The player-up icon disappears and the player's statistics display the change brought about, if there is any such change. For example, an increase in health will increase the health bar of the player, while an ammo increase will show no explicit change.
