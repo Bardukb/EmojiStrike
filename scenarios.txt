@@ -1,7 +1,3 @@
-Do create scenarios that describe gameplay. These will be important for games. The scenarios should include how you move, 
-also how you can get cornered, how you attack/defend, etc in a story line. Upgrades, losing lives, etc can be the focus of individual scenarios.
-
-
 Once all users have registered their characters and the game has started, the system can be considered to be in the game state.
 
 Turns will cycle through the list of players. The player with the current turn will have 30 seconds until the turn switches onto the next player in the list.
