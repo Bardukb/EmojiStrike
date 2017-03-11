@@ -1,2 +1,16 @@
+NOTE sections numbers will automatically change when you add or delete things so be careful, becasue i have reference section numbers here too
+
 Remove section 2.1.5 -- Comm Int
 
+Remove the extra 3.2.3... sections -- for keys and all, they are in a table now
+
+BEFORE ADDING BELOW WRITE AT THE END OF SCTION: "Below are some tentative mockups created for the application user interface."
+Add UI mockup pics in Section 2.1.2 User Interface -- add at the end after the text paragraphs
+
+increase all sections from 2.3 onwards and make a new section 2.3  called Use Case Scenarios... add scenarios file text into it...this will be 2.3 and User Charcteristics will become 2.4, Constraints 2.5 etc
+
+REMOVE section 3.6 Other Requirements
+
+place UML Diagram in Section 4....?? lets decide on this on the whatsapp group... mahybe make new section 4 for UML Diagram and Appendices becomes section 5... lets see... for now jusy add to appendices
+
+Sequence Diagram same as UML Diagram, place in Section 4 Appendices... have a short intro paragraph for both... whatsay boy??if not here we can put sequence in Section 2.1.2 User Interface, right before Hardware Interface... check it
