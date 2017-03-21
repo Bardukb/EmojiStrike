@@ -1,0 +1,53 @@
+A1: An Analysis Report is much more than simply a User’s Guide! It should mainly address the designer, possibly customers as well, but certainly not the end-user.
+A2: The sections of an Analysis Report (like any type of a report) should be organized with respect to some criteria (e.g., software components). Diagrams are just means for expressing ideas, models (like text or screenshots). Naming (sub-)sections Diagram 1, 2, 3 is not good way to organize material.
+A3: Need to make sure section titles are clear enough to see how the overall organization is, what each section really includes, and how they complement each other.
+A4: The order in which modeling activities during an analysis should be performed and written as part of the report should be as follows: UC model first, followed by Object and Dynamic Models.
+A5: Too many nested levels of sectioning (e.g. 3.1.2.3) makes flow of the document and hence its understanding unnecessarilly complicated. 
+
+UC1: UC diagrams come pretty late and they seem to be done after the design of the menus. However UC analysis is the very first activity performed during analysis. On the contrary, menus should be designed around (in accordance with) UCs. Also remember that this documentation is not a post-analysis activity, it’s a live document summarizing/reporting the analysis itself!
+UC2: UC analysis mainly includes a textual description of the use-cases.
+UC3: Make sure each UC actually makes a good use-case (one of the important "selling points" of your software). "Quit Game" isn't one.
+UC4: Poor naming of use cases or actors: it should be "Get Help", not "Help", not "Getting Help"; "Player", not "Actor", not "Ali". 
+
+SD1: A Sequence Diagram represents the interactions of the objects in the software during a sequence of events. Thus you should introduce such a diagram by stating what that sequence is. E.g., the following Sequence Diagram shows how Ali successfully destroys the enemy spaceship by using blah blah, after doing blah blah…
+SD2: Incorrect flow of control in Sequence Diagrams.
+SD3: Make sure each object in a Sequence Diagram is actually responsible for each incoming message/method call.
+SD4: Poor naming of objects in Sequence Diagrams.
+SD5: Properly show the data passing (parameters) during messaging in between objects.
+SD6: New object creations not shown properly.
+SD7: Actors should directly interact with boundary objects, not control or entity objects. 
+
+ST1: Could make use of State Diagrams.
+ST2: States in a State Diagram belong to a particular object of a certain class, neither non-objects nor multiple objects.
+ST3: States in a State Diagram should be complementary and mutually exclusive. 
+
+AD1: Activities in an Activity Diagram should be the activities of the system, not the user!
+AD2: Incorrect use of the synchronization in Activity Diagrams.
+AD3: Conditionals/branches not properly shown in Activity Diagrams. 
+
+CD1: Improper naming of classes; should be nouns that are singular.
+CD2: Associations should be given proper role names.
+CD3: Multiplicities should be specified for associations where appropriate. 
+
+G1: What you analyze, design, and implement is a software or software tool or simply tool, not simply a program.
+G2: In general it’s a lot more effective (in terms of conveying ideas) to have some pictures, screenshots as early as possible during a presentation or documentation in general.
+G3: Just like any other formal report, it should have a table-of-contents; all figures must be numbered and should have caption, etc. As “computer people” who write such documents regularly, we strongly recommend that you learn a word processor well; that is, use auto formatting, auto numbering, auto table of contents, etc.
+G4: Java API documentation is better be presented separately (than the internal document) as it is often long and clutters the report.
+G5: The explanations of UML diagrams should be in plain English (e.g., use “main menu” instead of “MainMenu class”; use “collision manager” instead of “CollisionMgr object”; say “a new weapon of this type is created” instead of “create method of WeaponMgr is called with this type”).
+G6: Some diagrams are redundant (similar kind of information is captured in multiple diagrams).
+G7: Anything "lifted" (i.e. copied) from some place else, should be cited properly; even an icon.
+G8: Figures/diagrams are not readable (e.g. zoom level too small).
+G9: Use a CASE tool to make sure UML notation is correctly followed.
+G10: The diagram does not present anything interesting/useful in particular.
+
+
+
+Because this is a classic arcade game I can understand you may be having some difficulty to produce Use Cases and/or scenarios. You should then describe gameplay with a different approach but in an expressive way. 
+
+The scenarios as they are written now describe features. There is such a style of describing how a software functions, so you have not done something wrong, but this is not necessarily called scenarios. Just update the titles to "... feature" and naming will be OK. 
+
+The analysis object model is simple, but clear and I like it that way. It is also correct in the way that you are not (yet) focusing on the technology. However, one should also be able to understand how these objects are used to achieve the functional requirements. For that you will need some additional UML diagrams such as collaboration diagrams, sequence diagrams, or state diagrams that show how a particular feature functions or how a particular scenario runs. This is very important for a software that has a simple object model. One could mistakenly think this is not necessarily a project that involves effort. With the additional diagrams, you can show the complex parts of your work. 
+
+You should also describe textually what each UML diagram is abour. The textual descriptions can be brief, no problem there but posting one UML after another is not a good habit. 
+
+Some more mockups showing how features are expected to run would also be better. 
