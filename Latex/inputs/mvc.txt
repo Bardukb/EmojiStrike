@@ -1,0 +1,6 @@
+
+We chose to implement our subsystem decomposition in MVC style.  That is, our subsystems are decomposed into 3 different types. 
+\\\\Model: Responsible for application domain knowledge
+\\View: Responsible for displaying application domain objects to the user
+\\Controller: Responsible for sequence of interactions with the user and notifying views of changes in the model
+\\\\\indent This design pattern enables us to differentiate between three main components of our system, providing the required abstraction during the software architecture tasks.

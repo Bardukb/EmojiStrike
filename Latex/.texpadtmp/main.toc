@@ -1,0 +1,62 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {subsection}{\numberline {1.1}Purpose of the System}{3}
+\contentsline {subsection}{\numberline {1.2}Design Goals }{3}
+\contentsline {subsubsection}{\numberline {1.2.1}End User Criteria}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Maintenance Criteria}{4}
+\contentsline {subsubsection}{\numberline {1.2.3}Performance Criteria}{4}
+\contentsline {subsubsection}{\numberline {1.2.4}Trade Offs}{4}
+\contentsline {subsection}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{4}
+\contentsline {subsection}{\numberline {1.4}References}{4}
+\contentsline {subsection}{\numberline {1.5}Overview}{4}
+\contentsline {section}{\numberline {2}Software Architecture}{4}
+\contentsline {subsection}{\numberline {2.1}Overview}{4}
+\contentsline {subsection}{\numberline {2.2}Subsystem Decomposition}{4}
+\contentsline {subsection}{\numberline {2.3}Architectural Styles}{5}
+\contentsline {subsubsection}{\numberline {2.3.1}Layers}{5}
+\contentsline {subsubsection}{\numberline {2.3.2}Model View Controller}{5}
+\contentsline {subsection}{\numberline {2.4}Hardware/Software Mapping}{5}
+\contentsline {subsection}{\numberline {2.5}Persistent Data Management}{6}
+\contentsline {subsection}{\numberline {2.6}Access Control and Security}{6}
+\contentsline {subsection}{\numberline {2.7}Boundary Conditions}{6}
+\contentsline {section}{\numberline {3}Subsystem Design}{6}
+\contentsline {subsection}{\numberline {3.1}Architectural Style}{7}
+\contentsline {subsubsection}{\numberline {3.1.1}Model View Controller Design}{7}
+\contentsline {subsection}{\numberline {3.2}Detailed Object Design}{7}
+\contentsline {subsubsection}{\numberline {3.2.1}Menu}{7}
+\contentsline {paragraph}{\numberline {3.2.1.1}Attributes \\}{7}
+\contentsline {paragraph}{\numberline {3.2.1.2}Constructors \\}{8}
+\contentsline {paragraph}{\numberline {3.2.1.3}Operations \\}{8}
+\contentsline {subsubsection}{\numberline {3.2.2}MainFrame Loader}{9}
+\contentsline {paragraph}{\numberline {3.2.2.1}Attributes \\}{10}
+\contentsline {paragraph}{\numberline {3.2.2.2}Constructors \\}{10}
+\contentsline {paragraph}{\numberline {3.2.2.3}Operations \\}{10}
+\contentsline {subsubsection}{\numberline {3.2.3}MainMenu}{10}
+\contentsline {paragraph}{\numberline {3.2.3.1}Attributes \\}{10}
+\contentsline {paragraph}{\numberline {3.2.3.2}Constructors \\}{10}
+\contentsline {paragraph}{\numberline {3.2.3.3}Operations \\}{10}
+\contentsline {subsubsection}{\numberline {3.2.4}LoadMenu}{11}
+\contentsline {paragraph}{\numberline {3.2.4.1}Attributes \\}{11}
+\contentsline {paragraph}{\numberline {3.2.4.2}Constructors \\}{12}
+\contentsline {paragraph}{\numberline {3.2.4.3}Operations \\}{12}
+\contentsline {subsubsection}{\numberline {3.2.5}PlayerMenu}{12}
+\contentsline {paragraph}{\numberline {3.2.5.1}Attributes \\}{13}
+\contentsline {paragraph}{\numberline {3.2.5.2}Constructors \\}{13}
+\contentsline {paragraph}{\numberline {3.2.5.3}Operations \\}{13}
+\contentsline {subsubsection}{\numberline {3.2.6}MapMenu}{14}
+\contentsline {paragraph}{\numberline {3.2.6.1}Attributes \\}{14}
+\contentsline {paragraph}{\numberline {3.2.6.2}Constructors \\}{14}
+\contentsline {paragraph}{\numberline {3.2.6.3}Operations \\}{14}
+\contentsline {subsubsection}{\numberline {3.2.7}SaveMenu}{15}
+\contentsline {paragraph}{\numberline {3.2.7.1}Attributes \\}{15}
+\contentsline {paragraph}{\numberline {3.2.7.2}Constructors \\}{15}
+\contentsline {paragraph}{\numberline {3.2.7.3}Operations \\}{15}
+\contentsline {subsubsection}{\numberline {3.2.8}GameScreen}{16}
+\contentsline {paragraph}{\numberline {3.2.8.1}Attributes \\}{16}
+\contentsline {paragraph}{\numberline {3.2.8.2}Constructors \\}{16}
+\contentsline {paragraph}{\numberline {3.2.8.3}Operations \\}{17}
+\contentsline {subsubsection}{\numberline {3.2.9}WinScreen}{17}
+\contentsline {paragraph}{\numberline {3.2.9.1}Attributes \\}{18}
+\contentsline {paragraph}{\numberline {3.2.9.2}Constructors \\}{18}
+\contentsline {paragraph}{\numberline {3.2.9.3}Operations \\}{18}
+\contentsline {subsubsection}{\numberline {3.2.10}MenuContainer}{18}
+\contentsline {paragraph}{\numberline {3.2.10.1}Attributes \\}{18}
