@@ -1,8 +1,7 @@
 Usability: The system is a game, so the main priority should be making sure that the user enjoys the game. For this purpose, the game is designed in a way that a newbie player and an experienced player can both enjoy the game same way. This means that a first time user can just run the game, learn the game and play the game accordingly and a more experienced player can run the game, play the game with better knowledge so that he/she can play it more efficiently. 
 
-Learnability: All the times that the game is launched, the user can check the controls and the gameplay features via tutorial screen. Since this is an arcade game, the features and controls are kept simple with just keyboard inputs. The in-game features like power-ups and weapons will be learned through experience but since the logic of the game is simple, the user can easily learn these features.
+	Learnability: All the times that the game is launched, the user can check the controls and the gameplay features via tutorial screen. Since this is an arcade game, the features and controls are kept simple with just keyboard inputs. The in-game features like power-ups and weapons will be learned through experience but since the logic of the game is simple, the user can easily learn these features.
 	
-Portability: Since the game will run on the Java Virtual Machine, the system is highly portable. The system has no other portability considerations rather than these.
+	Portability: Since the game will run on the Java Virtual Machine, the system is highly portable. The system has no other portability considerations rather than these.
 	
-
-	
+	Extensibility: The software designed in an object oriented approach. This makes the system to be customized with various upgrades like new power-ups, new weapons, new character emojis, new maps etc. Since this system architechtured as object oriented, these upgrades won’t cause any problems.

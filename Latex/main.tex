@@ -43,7 +43,7 @@
 \textsc{\large Design Report Draft}\\[0.5cm] % Minor heading such as course title
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Emoji Stkire }\\ % Title of your document
+{ \huge \bfseries Emoji Strike }\\ % Title of your document
 \HRule \\[1.5cm]
 
 \begin{minipage}{0.4\textwidth}
@@ -100,21 +100,17 @@ Emoji Strike is a 2-D arcade game. The game is designed so that a group of frien
 
 %------------------------------------------------
 
-\subsubsection{End User Criteria} % Sub-sub-section
 
 \input{inputs/input1.txt}
 
 %------------------------------------------------
 
-\subsubsection{Maintenance Criteria} % Sub-sub-section
 
 %----------------------------------------------------------------------------------------
 
-\subsubsection{Performance Criteria} % Sub-sub-section
 
 %----------------------------------------------------------------------------------------
 
-\subsubsection{Trade Offs} % Sub-sub-section
 
 %----------------------------------------------------------------------------------------
 
@@ -206,9 +202,9 @@ In this section, we will bridge the gap between a problem and an existing system
 \subsubsection{Model View Controller Design}
 \input{inputs/mvc.txt}
 
-\subsection{Detailed Object Design}
+\subsection{User Interface Subsystem}
 
-Figure \ref{fig:views}} illustrates the User Interface Management Subsystem Diagram.
+Figure \ref{fig:views} illustrates the User Interface Management Subsystem Diagram.
 \begin{figure}[h!]
    \centering
    \vspace{10pt}%
@@ -506,10 +502,277 @@ Figure \ref{fig:menucontainer} illustrates the MenuContainer Class.
 \paragraph{Attributes \\}
 
 List of attributes used in MenuContainer class.\\
-\textbf{private JFrame layout:} All visuals of the window will be displayed here.\\
+\textbf{private JFrame layout:} All visuals of the window will be displayed here\\
 
 
 %/MenuContainer
+
+
+%entitites
+\subsection{Entities Subsystem}
+
+Figure \ref{fig:entity} illustrates the Entites Subsystem Diagram.
+
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=17cm]{entity.png}
+   \caption{Entities Subsystem}
+   \label{fig:entity}
+\end{figure}
+
+%GameMap
+\subsubsection{GameMap} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:gamemap} illustrates the GameMap Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{gamemap.png}
+   \caption{GameMap Class}
+   \label{fig:gamemap}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in GameMap class.\\
+\textbf{private terrainSprite:} This attribute stores the image file associated with the current object.\\
+\textbf{private currentTurn:} This attribute stores the image file associated with the current object.\\
+\textbf{private terrain:} This attribute stores the image file associated with the current object.\\
+\textbf{private remainingTime:} This attribute stores the image file associated with the current object.\\
+\textbf{private dynamicObjects:} This attribute stores the image file associated with the current object.\\
+\textbf{private playerCount:} This attribute stores the image file associated with the current object.
+
+\paragraph{Constructors \\}
+List of constructors used in GameMap class.\\
+\textbf{public GameMap:} 
+
+\paragraph{Operations \\}
+List of operations used in GameMap class.\\
+\textbf{public void changeTurn:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void destroyObject:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void loadTerrain:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void resetTurn:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void generatePowerUp:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void collisionStatus:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void damagePlayer:} Uses the active weapon to perform shooting operation. 
+
+%/GameMap
+
+
+
+%Location
+\subsubsection{Location} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:location} illustrates the GameMap Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{location.png}
+   \caption{Location Class}
+   \label{fig:location}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in Location class.\\
+\textbf{private xCoordinate:} \\
+\textbf{private yCoordinate:} 
+
+
+\paragraph{Constructors \\}
+List of constructors used in Location class.\\
+\textbf{public Location:} 
+
+\paragraph{Operations \\}
+List of operations used in Location class.\\
+\textbf{public void getX:}  \\
+\textbf{public void getY:}  \\
+\textbf{public void setX:}  \\
+\textbf{public void setY:}  
+
+
+%/Location
+
+
+%GameObject
+\subsubsection{GameObject} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:gameobject} illustrates the GameObject Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{gameobject.png}
+   \caption{GameObject Class}
+   \label{fig:gameobject}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in GameObject class.\\
+\textbf{private location:} \\
+\textbf{private ID:} \\
+\textbf{private sprite:} \\
+
+\paragraph{Operations \\}
+List of operations used in GameObject class.\\
+\textbf{public void destroyObject:}  \\
+\textbf{public void getY:}  \\
+\textbf{public void setX:}  \\
+\textbf{public void setY:}  
+
+%/GameObject
+
+
+%PowerUp
+\subsubsection{PowerUp} 
+
+Figure \ref{fig:powerup} illustrates the PowerUp Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{powerup.png}
+   \caption{PowerUp Class}
+   \label{fig:powerup}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in PowerUp class.\\
+\textbf{private name:} This attribute stores the name of the specific power up.
+
+\paragraph{Constructors \\}
+List of constructors used in PowerUp class.\\
+\textbf{public PowerUp:} This constructor retrieves name, ID, coordinates, texture file from its parameter and sets necessary values accordingly.
+
+\paragraph{Operations \\}
+List of operations used in PowerUp class.\\
+\textbf{public String getName:} This operations retrieves the name of the powerup and returns it as a String.
+
+
+%/Location
+
+
+%player
+\subsubsection{Player} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:player} illustrates the Player Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{player.png}
+   \caption{Player Class}
+   \label{fig:player}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in Player class.\\
+\textbf{private name:} The variable which holds the prompted name of the user.\\
+\textbf{private health:} The variable which holds the health value of the player.\\
+\textbf{private weaponArray:} This attribute holds the weapon objects available to the specific player.\\
+\textbf{private activeWeapon:} This attribute holds the weapon currently selected by the current player.
+
+\paragraph{Constructors \\}
+List of constructors used in Player class.\\
+\textbf{public Player:} Initializes Player object's attributes which are name, health, weaponArray, activeWeapon. It takes name as its parameter.
+
+\paragraph{Operations \\}
+List of operations used in Player class.\\
+\textbf{public void Shoot:} Uses the active weapon to perform shooting operation. Returns an arraylist of values resulting from the shooting operation to be used later.\\
+\textbf{public void move:} Moves the player in one of the four degrees of freedom.  It takes direction as integer parameter. \\
+\textbf{public void setHealth:} Sets health to prompted health value obtained in parameter. \\
+\textbf{public String getEmojiFile:} Retrieves the file path of the emoji file sprite. \\
+\textbf{public String getName:} Retrieves the name of the player. \\
+\textbf{public void die:} Triggers the \textit{removeObject} method of the \textit{GameMap} class. \\
+\textbf{public void changeActiveWeapon:} Changes the current active weapon to the desired weapon specified by the integer id in the parameter. \\
+\textbf{public int changeActiveWeapon:} Retrieves the health value of the player. \\
+\textbf{public Weapon getWeapon:} Retrieves the Weapon object currently used by the player. 
+
+%/player
+
+
+%Weapon
+\subsubsection{Weapon} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:weapon} illustrates the Weapon Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{weapon.png}
+   \caption{Weapon Class}
+   \label{fig:weapon}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in Weapon class.\\
+\textbf{private name:} The variable which holds the prompted name of the weapon.\\
+\textbf{private ammo:} The variable which holds the ammo value of the weapon.\\
+\textbf{private ID:} This attribute holds the primary ID of the weapon.\\
+\textbf{private damage:} This attribute holds the damage value of the weapon.\\
+\textbf{private range:} This attribute holds the range of the weapon, determining the maximum distance it can travel. \\
+\textbf{private impactTime:} This attribute determines the amount of time specific weapon will spend during the projectile motion. \\
+
+\paragraph{Constructors \\}
+List of constructors used in Weapon class.\\
+\textbf{public Weapon:} Initializes Weapon class's attributes name, ammo, ID, damage, range, impactTime.
+
+\paragraph{Operations \\}
+List of operations used in Weapon class.\\
+\textbf{public void setAmmo:} Sets the ammo of the weapon to the prompted amount. \\
+\textbf{public void getAmmo:} Retrieves the current ammo value of the weapon. \\
+\textbf{public void getDamage:} Retrieves the current damage value of the weapon. \\
+\textbf{public void getRange:} Retrieves the current range value of the weapon. \\
+\textbf{public void getImpactTime:} Retrieves the current impact time value of the weapon. 
+
+%/weapon
+
+%Sprite
+\subsubsection{Sprite} %image is not in the right place, because latex doesn't want to waste page
+
+Figure \ref{fig:sprite} illustrates the Sprite Class.
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=10cm]{sprite.png}
+   \caption{Sprite Class}
+   \label{fig:sprite}
+\end{figure}
+
+\paragraph{Attributes\\}
+
+List of attributes used in Sprite class.\\
+\textbf{private imageFile:} This attribute stores the image file associated with the current object.\\
+\textbf{private velocityX:} The variable which holds the vectorial horizontal speed value of the sprite.\\
+\textbf{private velocityY:} The variable which holds the vectorial vertical speed value of the sprite.\\
+\paragraph{Constructors \\}
+List of constructors used in Sprite class.\\
+\textbf{public Sprite:} Initializes Sprite class's attributes imageFile, velocityX, velocityY values.
+
+
+%/Sprite
+
+
+%management
+\subsection{Management Subsystem}
+
+Figure \ref{fig:controller} illustrates the Management Subsystem Diagram.
+
+\begin{figure}[h!]
+   \centering
+   \vspace{10pt}%
+   \includegraphics[width=17cm]{controller.png}
+   \caption{Management Subsystem}
+   \label{fig:controller}
+\end{figure}
+
+
+Entities Subsystem consists of 7 classes which contains the objects and information necessary to provide interactions between objects.  There is also an abstract entity used in this design.
+
+
+
+
 
 
 %----------------------------------------------------------------------------------------
