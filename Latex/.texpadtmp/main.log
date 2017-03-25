@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.18)  26 MAR 2017 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.18)  26 MAR 2017 00:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -668,19 +668,24 @@ Overfull \hbox (65.44316pt too wide) in paragraph at lines 519--520
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Pictures/gamemap.png, id=86, 462.72874pt x 434.62375pt>
+<Pictures/gamemap.png, id=86, 492.84125pt x 474.77374pt>
 File: Pictures/gamemap.png Graphic file (type png)
  <use Pictures/gamemap.png>
-Package pdftex.def Info: Pictures/gamemap.png used on input line 531.
-(pdftex.def)             Requested size: 284.52756pt x 267.2489pt.
+Package pdftex.def Info: Pictures/gamemap.png used on input line 532.
+(pdftex.def)             Requested size: 284.52756pt x 274.10843pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./Pictures/menucontainer.png>] [19 <./Pictures/entity.png>] [20 <./Pictures/gamemap.png>] <Pictures/location.png, id=100, 161.60374pt x 247.92625pt>
+[18 <./Pictures/menucontainer.png>] [19 <./Pictures/entity.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 548--550
+
+ []
+
+[20 <./Pictures/gamemap.png>] <Pictures/location.png, id=100, 161.60374pt x 247.92625pt>
 File: Pictures/location.png Graphic file (type png)
  <use Pictures/location.png>
-Package pdftex.def Info: Pictures/location.png used on input line 571.
+Package pdftex.def Info: Pictures/location.png used on input line 574.
 (pdftex.def)             Requested size: 284.52756pt x 436.53691pt.
 
 
@@ -689,21 +694,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Pictures/gameobject.png, id=101, 211.79124pt x 247.92625pt>
 File: Pictures/gameobject.png Graphic file (type png)
  <use Pictures/gameobject.png>
-Package pdftex.def Info: Pictures/gameobject.png used on input line 605.
+Package pdftex.def Info: Pictures/gameobject.png used on input line 608.
 (pdftex.def)             Requested size: 284.52756pt x 333.08577pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 612--616
+Underfull \hbox (badness 10000) in paragraph at lines 615--619
 
  []
 
 [21] [22 <./Pictures/location.png>] <Pictures/powerup.png, id=109, 382.42876pt x 118.4425pt>
 File: Pictures/powerup.png Graphic file (type png)
  <use Pictures/powerup.png>
-Package pdftex.def Info: Pictures/powerup.png used on input line 634.
+Package pdftex.def Info: Pictures/powerup.png used on input line 637.
 (pdftex.def)             Requested size: 284.52756pt x 88.125pt.
 
 
@@ -712,7 +717,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [23 <./Pictures/gameobject.png>] <Pictures/player.png, id=114, 427.5975pt x 422.57875pt>
 File: Pictures/player.png Graphic file (type png)
  <use Pictures/player.png>
-Package pdftex.def Info: Pictures/player.png used on input line 663.
+Package pdftex.def Info: Pictures/player.png used on input line 666.
 (pdftex.def)             Requested size: 284.52756pt x 281.18542pt.
 
 
@@ -721,34 +726,34 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [24 <./Pictures/powerup.png>] [25 <./Pictures/player.png>] <Pictures/weapon.png, id=124, 472.76625pt x 397.485pt>
 File: Pictures/weapon.png Graphic file (type png)
  <use Pictures/weapon.png>
-Package pdftex.def Info: Pictures/weapon.png used on input line 702.
+Package pdftex.def Info: Pictures/weapon.png used on input line 705.
 (pdftex.def)             Requested size: 284.52756pt x 239.22672pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--716
+Underfull \hbox (badness 10000) in paragraph at lines 712--719
 
  []
 
 [26 <./Pictures/weapon.png>] <Pictures/sprite.png, id=129, 191.71625pt x 153.57375pt>
 File: Pictures/sprite.png Graphic file (type png)
  <use Pictures/sprite.png>
-Package pdftex.def Info: Pictures/sprite.png used on input line 738.
+Package pdftex.def Info: Pictures/sprite.png used on input line 741.
 (pdftex.def)             Requested size: 284.52756pt x 227.95343pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 745--749
+Underfull \hbox (badness 10000) in paragraph at lines 748--752
 
  []
 
 [27] <Pictures/controller.png, id=133, 766.865pt x 667.49374pt>
 File: Pictures/controller.png Graphic file (type png)
  <use Pictures/controller.png>
-Package pdftex.def Info: Pictures/controller.png used on input line 765.
+Package pdftex.def Info: Pictures/controller.png used on input line 768.
 (pdftex.def)             Requested size: 483.69684pt x 421.02237pt.
 
-Overfull \hbox (65.44316pt too wide) in paragraph at lines 765--766
+Overfull \hbox (65.44316pt too wide) in paragraph at lines 768--769
  [][] 
  []
 
@@ -757,7 +762,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [28 <./Pictures/sprite.png>]
 
-LaTeX Warning: Empty `thebibliography' environment on input line 791.
+LaTeX Warning: Empty `thebibliography' environment on input line 794.
 
 [29 <./Pictures/controller.png>] (/Users/borabarduk/Dropbox/Bilkent/Spring 2017/CS 319/EmojiStrike/Latex/.texpadtmp/main.aux)
 
@@ -773,7 +778,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  37i,6n,23p,1077b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "/Users/borabarduk/Dropbox/Bilkent/Spring 2017/CS 319/EmojiStrike/Latex/.texpadtmp/main.pdf" (30 pages, 538221 bytes).
+Output written on "/Users/borabarduk/Dropbox/Bilkent/Spring 2017/CS 319/EmojiStrike/Latex/.texpadtmp/main.pdf" (30 pages, 528104 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream

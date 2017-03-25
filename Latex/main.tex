@@ -523,6 +523,7 @@ Figure \ref{fig:entity} illustrates the Entites Subsystem Diagram.
 
 %GameMap
 \subsubsection{GameMap} %image is not in the right place, because latex doesn't want to waste page
+GameMap class generates and removes the components of the game and maintains the communication between those generated components. 
 
 Figure \ref{fig:gamemap} illustrates the GameMap Class.
 \begin{figure}[h!]
@@ -536,26 +537,28 @@ Figure \ref{fig:gamemap} illustrates the GameMap Class.
 \paragraph{Attributes\\}
 
 List of attributes used in GameMap class.\\
-\textbf{private terrainSprite:} This attribute stores the image file associated with the current object.\\
-\textbf{private currentTurn:} This attribute stores the image file associated with the current object.\\
-\textbf{private terrain:} This attribute stores the image file associated with the current object.\\
+\textbf{private terrainSprite:} This attribute holds the texture type of the terrain.\\
+\textbf{private currentTurn:} This attribute stores the current turn.\\
+\textbf{private terrain:} This list holds the references to all block objects of the game map.\\
 \textbf{private remainingTime:} This attribute stores the image file associated with the current object.\\
-\textbf{private dynamicObjects:} This attribute stores the image file associated with the current object.\\
-\textbf{private playerCount:} This attribute stores the image file associated with the current object.
+\textbf{private dynamicObjects:} This list hold the references to both all players and all power-ups.\\
+\textbf{private playerCount:} This attribute holds the number of dead or alive players in the game.
 
 \paragraph{Constructors \\}
 List of constructors used in GameMap class.\\
-\textbf{public GameMap:} 
+\textbf{public GameMap:} Constructs a game map with given terrain type and player number and attributes.\\
+
 
 \paragraph{Operations \\}
 List of operations used in GameMap class.\\
-\textbf{public void changeTurn:} Uses the active weapon to perform shooting operation. \\
-\textbf{public void destroyObject:} Uses the active weapon to perform shooting operation. \\
-\textbf{public void loadTerrain:} Uses the active weapon to perform shooting operation. \\
+\textbf{public void destroyObject:} Destroys the game objects according to the ID. \\
+\textbf{public void loadTerrain:} Loads the terrain into the map. \\
 \textbf{public void resetTurn:} Uses the active weapon to perform shooting operation. \\
-\textbf{public void generatePowerUp:} Uses the active weapon to perform shooting operation. \\
-\textbf{public void collisionStatus:} Uses the active weapon to perform shooting operation. \\
-\textbf{public void damagePlayer:} Uses the active weapon to perform shooting operation. 
+\textbf{public void applyPowerUp:} Applies the given power-up to the given player.\\
+\textbf{public void collisionStatus:} Checks if two objects collide.\\
+\textbf{public void damagePlayer:} Decreases the given player's health by given damage amount.\\
+\textbf{public void processShot	:} Processes shooting according to the arraylist comes from the method  \textit{shoot}.
+
 
 %/GameMap
 
