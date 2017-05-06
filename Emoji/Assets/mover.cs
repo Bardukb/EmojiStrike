@@ -4,7 +4,7 @@ using System.Collections;
 public class mover : MonoBehaviour {
 
 	public float speed;             //Floating point variable to store the player's movement speed.
-
+	public int ammo;
 	public int orientation;
 
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
@@ -15,6 +15,7 @@ public class mover : MonoBehaviour {
 		//Get and store a reference to the Rigidbody2D component so that we can access it.
 		rb2d = GetComponent<Rigidbody2D> ();
 		orientation = -1;
+		ammo = 100;
 	}
 
 	//FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.

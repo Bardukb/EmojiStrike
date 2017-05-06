@@ -110,8 +110,13 @@
      <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitPixel.cs" />
      <Compile Include="Assets\Destructible 2D\Scripts\D2dVector2.cs" />
      <Compile Include="Assets\destroy.cs" />
+     <Compile Include="Assets\destroyer2.cs" />
+     <Compile Include="Assets\indicator.cs" />
+     <Compile Include="Assets\manager.cs" />
      <Compile Include="Assets\mover.cs" />
+     <Compile Include="Assets\remaining.cs" />
      <Compile Include="Assets\script1.cs" />
+     <Compile Include="Assets\shootmechanics.cs" />
      <Compile Include="Assets\writer.cs" />
      <None Include="Assets\Destructible 2D\Shaders\Diffuse.shader" />
      <None Include="Assets\Destructible 2D\Shaders\Outline.shader" />

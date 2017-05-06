@@ -18,7 +18,7 @@ public class writer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timePassed -= Time.deltaTime;
-		score.text = "hello time: " + ((int)timePassed) % 30;
+		score.text = "Remaining time: " + ((int)timePassed) % 30;
 		
 	}
 }
