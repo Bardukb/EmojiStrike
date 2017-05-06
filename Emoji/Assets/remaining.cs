@@ -13,17 +13,18 @@ public class remaining : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		player = GameObject.Find ("Murderer");
+		player = GameObject.Find ("murderer");
 
-		remainingAmmo = player.GetComponent<destroyer2> ().remainingAmmo;
+		remainingAmmo = player.GetComponent<destroyer2> ().ammo;
 
 		score = GetComponent<UnityEngine.UI.Text>();
 
-		score.text = "Mag: " + remainingAmmo;
+		score.text = "Ammo: " + remainingAmmo;
 	}
 
-	// Update is called once per frame
+
 	void Update () {
-		score.text = "Mag: " + remainingAmmo;
+		remainingAmmo = player.GetComponent<destroyer2> ().ammo;
+		score.text = "Ammo: " + remainingAmmo;
 	}
 }

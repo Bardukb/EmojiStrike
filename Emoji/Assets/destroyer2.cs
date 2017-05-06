@@ -9,11 +9,12 @@
 		public GameObject BulletPrefab;
 
 		public GameObject manager;
-		public int remainingAmmo;
+		public int ammo;
 
 		public GameObject MuzzleFlashPrefab;
 
 		public float ReloadTime;
+		public float spread;
 
 		public float TurnSpeed;
 
@@ -34,6 +35,7 @@
 		private float thrusterScale;
 
 		private float cooldown;
+
 		GameObject instanceOfPlayer;
 
 		private int orientationValue;
@@ -46,7 +48,7 @@
 		{
 			instanceOfPlayer = GameObject.Find ("murderer");
 			manager = GameObject.Find ("Game Manager");
-			remainingAmmo = 100;
+			ammo = 100;
 		}
 
 		protected virtual void Update()
@@ -57,17 +59,20 @@
 			// Cool down the gun
 			if (manager.GetComponent<manager> ().weaponSelection == 0) {
 
-				cooldown = 1;
+				ReloadTime = 1;
+				spread = 0; //kivanc special is very accurate
 			}
 			else if (manager.GetComponent<manager> ().weaponSelection == 1) {
-
-				cooldown = 0.2f;
+				
+				ReloadTime = 0.10f;
+				spread = Random.Range (-5.0f, 5.0f);
 			}
 			else if (manager.GetComponent<manager> ().weaponSelection == 2) {
 
-				cooldown = 0.01f;
+				ReloadTime = 0.01f;
+				spread = Random.Range (-20.0f, 20.0f);
 			}
-
+			
 
 			cooldown -= Time.deltaTime;
 
@@ -86,17 +91,17 @@
 
 
 					// Spawn bullet?
-					if (BulletPrefab != null)
+				if (BulletPrefab != null && ammo > 0)
 					{
-					Debug.Log (remainingAmmo);
-						remainingAmmo--;
-						Instantiate(BulletPrefab, new Vector3(transform.position.x + 3* orientationValue  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, -90 * orientationValue )));
+
+						ammo--;
+						Instantiate(BulletPrefab, new Vector3((transform.position.x + 2)* orientationValue  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, -90 * orientationValue  + spread)));
 					}
 
 					// Spawn muzzle flash?
 					if (MuzzleFlashPrefab != null)
 					{
-						Instantiate(MuzzleFlashPrefab, muzzlePosition,  Quaternion.Euler(new Vector3(0, 0, 1)));
+					Instantiate(MuzzleFlashPrefab, new Vector3((transform.position.x + 2)* orientationValue  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, 1)));
 					}
 				}
 			}

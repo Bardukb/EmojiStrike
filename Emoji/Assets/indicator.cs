@@ -17,8 +17,18 @@ public class indicator : MonoBehaviour {
 	void FixedUpdate () {
 
 
+		if (manager.GetComponent<manager> ().weaponSelection == 0) {
 
 
+		}
+		else if (manager.GetComponent<manager> ().weaponSelection == 1) {
+
+
+		}
+		else if (manager.GetComponent<manager> ().weaponSelection == 2) {
+
+
+		}
 
 		
 	}

@@ -109,6 +109,7 @@
      <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitGroup.cs" />
      <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitPixel.cs" />
      <Compile Include="Assets\Destructible 2D\Scripts\D2dVector2.cs" />
+     <Compile Include="Assets\camerasc.cs" />
      <Compile Include="Assets\destroy.cs" />
      <Compile Include="Assets\destroyer2.cs" />
      <Compile Include="Assets\indicator.cs" />
