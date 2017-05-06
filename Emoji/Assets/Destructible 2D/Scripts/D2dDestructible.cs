@@ -526,18 +526,26 @@ namespace Destructible2D
 
 		public static void StampAll(Matrix4x4 matrix, Texture2D stampTex, float hardness, int layerMask = -1)
 		{
+
+
+
+
 			if (stampTex != null)
 			{
+				
 				for (var i = AllDestructibles.Count - 1; i >= 0; i--)
 				{
 					var destructible = AllDestructibles[i];
 
 					if (destructible != null && destructible.Indestructible == false)
 					{
+
+
 						var mask = 1 << destructible.gameObject.layer;
 
 						if ((layerMask & mask) != 0)
 						{
+							
 							destructible.BeginAlphaModifications();
 							{
 								destructible.Stamp(matrix, stampTex, hardness);

@@ -86,6 +86,16 @@ namespace Destructible2D
 		
 		[Tooltip("The amount of damage added to objects that the raycasts hit")]
 		public float DamagePerRay = 1.0f;
+
+		void OnCollisionEnter(Collision collision)
+		{
+			Debug.Log ("collode");
+			foreach (ContactPoint contact in collision.contacts)
+			{
+				Debug.DrawRay(contact.point, contact.normal, Color.white);
+			}
+
+		}
 		
 		protected virtual void Start()
 		{
@@ -93,7 +103,9 @@ namespace Destructible2D
 			{
 				var stampPosition = transform.position;
 				var stampAngle    = StampRandomDirection == true ? Random.Range(-180.0f, 180.0f) : 0.0f;
-			
+
+
+
 				D2dDestructible.StampAll(stampPosition, StampSize, stampAngle, StampTex, StampHardness, Mask);
 			}
 
