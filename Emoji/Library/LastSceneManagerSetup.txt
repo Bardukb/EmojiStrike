@@ -2,12 +2,3 @@ sceneSetups:
 - path: Assets/things/emoji2.unity
   isLoaded: 1
   isActive: 1
-- path: Assets/Destructible 2D/Examples/Spaceship.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Destructible 2D/Examples/Huge Map.unity
-  isLoaded: 0
-  isActive: 0
-- path: Assets/Destructible 2D/Examples/Car Damage.unity
-  isLoaded: 0
-  isActive: 0
