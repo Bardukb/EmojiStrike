@@ -19,6 +19,12 @@ public class writer : MonoBehaviour {
 	void Update () {
 		timePassed -= Time.deltaTime;
 		score.text = "Remaining time: " + ((int)timePassed) % 30;
+
+		if (timePassed < 0) {
+
+
+
+		}
 		
 	}
 }

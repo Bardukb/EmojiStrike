@@ -12,6 +12,7 @@ public class manager : MonoBehaviour {
 	void Start () {
 		weaponSelection = 0;
 		indic = GameObject.Find ("indicator");
+
 	}
 	
 	// Update is called once per frame
