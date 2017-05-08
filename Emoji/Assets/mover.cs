@@ -6,6 +6,7 @@ public class mover : MonoBehaviour {
 	public float speed;             //Floating point variable to store the player's movement speed.
 	public int ammo;
 	public int orientation;
+	public float cooldown;
 
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
@@ -27,8 +28,13 @@ public class mover : MonoBehaviour {
 		//Store the current vertical input in the float moveVertical.
 		float moveVertical = Input.GetAxis ("Vertical");
 
-		if (Input.GetKeyDown (KeyCode.UpArrow))
-			transform.Translate(0, 1, 0);
+
+		cooldown -= Time.deltaTime;
+
+		if (Input.GetKeyDown (KeyCode.UpArrow) && cooldown <= 0.0f) {
+			transform.Translate (0, 2, 0);
+			cooldown    = 1;
+		}
 
 		//Use the two store floats to create a new Vector2 variable movement.
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
