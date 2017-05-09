@@ -26,11 +26,11 @@ public class Disabling1 : MonoBehaviour {
 		}
 		if(oddOrEven%2==0){
 			GetComponent<destroyer1>().enabled = false;
-			GetComponent<mover>().enabled = false;
+			GetComponent<mover2>().enabled = false;
 		}
 		else{
 			GetComponent<destroyer1>().enabled = true;
-			GetComponent<mover>().enabled = true;
+			GetComponent<mover2>().enabled = true;
 		}
 	}
 }

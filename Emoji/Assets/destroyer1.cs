@@ -54,7 +54,7 @@ using UnityEngine;
 		protected virtual void Update()
 		{
 
-			orientationValue = instanceOfPlayer.GetComponent<mover> ().orientation;
+			orientationValue = instanceOfPlayer.GetComponent<mover2> ().orientation;
 
 			// Cool down the gun
 			if (manager.GetComponent<manager> ().weaponSelection == 0) {
@@ -93,15 +93,26 @@ using UnityEngine;
 					// Spawn bullet?
 				if (BulletPrefab != null && ammo > 0)
 					{
-
+				if(instanceOfPlayer.GetComponent<mover2> ().orientation == 1){
 						ammo--;
-						Instantiate(BulletPrefab, new Vector3((transform.position.x + 2)* orientationValue  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, -90 * orientationValue  + spread)));
+						Instantiate(BulletPrefab, new Vector3((transform.position.x + 2)* instanceOfPlayer.GetComponent<mover2> ().orientation  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, -90 * instanceOfPlayer.GetComponent<mover2> ().orientation    + spread)));
+}
+else{
+	ammo--;
+						Instantiate(BulletPrefab, new Vector3((transform.position.x - 2), transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, -90 * instanceOfPlayer.GetComponent<mover2> ().orientation    + spread)));
+}
+
 					}
 
 					// Spawn muzzle flash?
 					if (MuzzleFlashPrefab != null)
 					{
-					Instantiate(MuzzleFlashPrefab, new Vector3((transform.position.x + 2)* orientationValue  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, 1)));
+					if(instanceOfPlayer.GetComponent<mover2> ().orientation == 1){
+					Instantiate(MuzzleFlashPrefab, new Vector3((transform.position.x + 2)* instanceOfPlayer.GetComponent<mover2> ().orientation  , transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, 1)));
+	}
+	else{
+		Instantiate(MuzzleFlashPrefab, new Vector3((transform.position.x - 2), transform.position.y , 0),  Quaternion.Euler(new Vector3(0, 0, 1)));
+	}
 					}
 				}
 			}

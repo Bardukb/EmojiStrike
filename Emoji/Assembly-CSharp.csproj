@@ -118,6 +118,7 @@
      <Compile Include="Assets\indicator.cs" />
      <Compile Include="Assets\manager.cs" />
      <Compile Include="Assets\mover.cs" />
+     <Compile Include="Assets\mover2.cs" />
      <Compile Include="Assets\remaining.cs" />
      <Compile Include="Assets\script1.cs" />
      <Compile Include="Assets\shootmechanics.cs" />

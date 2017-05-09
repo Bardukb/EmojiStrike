@@ -1,13 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
-public class mover : MonoBehaviour {
+public class mover2 : MonoBehaviour {
 
 	public float speed;             //Floating point variable to store the player's movement speed.
 	public int ammo;
 	public int orientation;
 	public float cooldown;
 	private bool shouldChange;
+
 	private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
 	// Use this for initialization
@@ -20,7 +21,7 @@ public class mover : MonoBehaviour {
 		shouldChange = false;
 	}
 	void Update(){
-		// flip the x scale
+			// flip the x scale
 		if(shouldChange==true){
 			transform.localScale = new Vector3(transform.localScale.x *-1, transform.localScale.y, transform.localScale.z);
 			orientation *= -1;
@@ -37,7 +38,6 @@ public class mover : MonoBehaviour {
 		//Store the current vertical input in the float moveVertical.
 		float moveVertical = Input.GetAxis ("Vertical");
 
-
 		cooldown -= Time.deltaTime;
 
 		if (Input.GetKeyDown (KeyCode.UpArrow) && cooldown <= 0.0f) {
@@ -52,7 +52,6 @@ public class mover : MonoBehaviour {
 		{
 			rb2d.velocity = rb2d.velocity.normalized * 100;
 		}
-
 
 		if(Input.GetKeyDown (KeyCode.F))
 		{

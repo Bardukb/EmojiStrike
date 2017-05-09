@@ -8,14 +8,22 @@ public class remaining : MonoBehaviour {
 	UnityEngine.UI.Text score;
 	public float remainingAmmo;
 
-	GameObject player;
+	GameObject player1;
+	GameObject player2;	
+	float timePassed;
+	int oddOrEven;
+
 
 	// Use this for initialization
 	void Start () {
 		
-		player = GameObject.Find ("murderer");
+		timePassed = 30;
+		oddOrEven = 0;
 
-		remainingAmmo = player.GetComponent<destroyer2> ().ammo;
+		player1 = GameObject.Find ("murderer");
+		player2 = GameObject.Find ("murderer2");
+
+		remainingAmmo = player1.GetComponent<destroyer2> ().ammo;
 
 		score = GetComponent<UnityEngine.UI.Text>();
 
@@ -24,7 +32,17 @@ public class remaining : MonoBehaviour {
 
 
 	void Update () {
-		remainingAmmo = player.GetComponent<destroyer2> ().ammo;
+				if(timePassed > 0){
+		timePassed -= Time.deltaTime;
+		}
+		else{
+			timePassed=30;
+			oddOrEven++;
+		}
+		if(oddOrEven%2==0){
+		remainingAmmo = player1.GetComponent<destroyer2> ().ammo;
+		}
+		else remainingAmmo = player2.GetComponent<destroyer1> ().ammo;
 		score.text = "Ammo: " + remainingAmmo;
 	}
 }
