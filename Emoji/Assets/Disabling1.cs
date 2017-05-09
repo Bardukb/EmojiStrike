@@ -25,11 +25,11 @@ public class Disabling1 : MonoBehaviour {
 			oddOrEven++;
 		}
 		if(oddOrEven%2==0){
-			GetComponent<destroyer2>().enabled = false;
+			GetComponent<destroyer1>().enabled = false;
 			GetComponent<mover>().enabled = false;
 		}
 		else{
-			GetComponent<destroyer2>().enabled = true;
+			GetComponent<destroyer1>().enabled = true;
 			GetComponent<mover>().enabled = true;
 		}
 	}
